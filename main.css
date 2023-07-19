@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "NetflixSansBold";
+  src: url("./font/netflix-sans/NetflixSansBold.ttf");
+}
+@font-face {
+  font-family: "NetflixSansRegular";
+  src: url("./font/netflix-sans/NetflixSansRegular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container__background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+.container__header {
+  align-self: flex-start;
+}
+.container__letters img {
+  width: 94px;
+  height: 52px;
+}
+.container__all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__message {
+  align-self: flex-start;
+  font-family: "NetflixSansBold";
+  font-weight: 100;
+  font-size: 32px;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.container__user input[type="text"]::placeholder {
+  color: #8c8c8c;
+}
+.container__user input[type="text"] {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #333333;
+  width: 324px;
+  height: 50px;
+  font-family: "NetflixSansRegular";
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.container__pass input[type="text"]::placeholder {
+  color: #8c8c8c;
+}
+.container__pass input[type="text"] {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #333333;
+  width: 324px;
+  height: 50px;
+  font-family: "NetflixSansRegular";
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.container__login input[type="button"] {
+  border: none;
+  outline: none;
+  width: 324px;
+  height: 50px;
+  font-size: 16px;
+  font-family: "NetflixSansRegular";
+  font-weight: 600;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 40px;
+  background-color: #e50914;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container__need {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.container__remember input[type="checkbox"] {
+  cursor: pointer;
+  background-color: red;
+  accent-color: #8c8c8c;
+  color: #e50914;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+.container__remember {
+  font-family: "NetflixSansRegular";
+  font-size: 13px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.container__help {
+  font-family: "NetflixSansRegular";
+  font-size: 13px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.container__new {
+  font-family: "NetflixSansRegular";
+  font-size: 15px;
+  color: #737373;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container__new span {
+  font-family: "NetflixSansRegular";
+  color: #ffffff;
+  cursor: pointer;
+}
+.container__captcha {
+  font-family: "NetflixSansRegular";
+  font-size: 12px;
+  color: #8c8c8c;
+  text-align: center;
+}
+.container__captcha span {
+  color: #0071eb;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .container__letters img {
+    width: 240px;
+    height: 125px;
+  }
+}

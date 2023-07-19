@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="./card.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+  </head>
+  <body>
+    <div class="container__background">
+      <div class="container__all">
+        <div class="container__letters">
+          <img src="./img/letters.png" />
+        </div>
+        <div class="container__title">
+          <h1>Configura tu tarjeta de crédito o débito</h1>
+        </div>
+        <div class="container__cards">
+          <img src="./img/cards-logo.png" />
+        </div>
+        <div class="container__number">
+          <div class="container__input__number">
+            <input
+              type="text"
+              maxlength="19"
+              placeholder="Número de tarjeta"
+              id="number"
+            />
+          </div>
+          <div class="container__icon__number">
+            <img src="./img/card-icon.png" />
+          </div>
+        </div>
+        <div class="container__expiration">
+          <div class="container__date">
+            <input
+              type="text"
+              maxlength="5"
+              placeholder="MM/AA"
+              id="year"
+            />
+          </div>
+          <div class="container__cvv">
+            <div class="container__input__cvv">
+              <input type="text" maxlength="3" placeholder="CVV" id="cvv" />
+            </div>
+            <div class="container__icon__cvv">
+              <img src="./img/question-icon.png" />
+            </div>
+          </div>
+        </div>
+        <div class="container__name">
+          <input type="text" placeholder="Nombre" id="firstname"/>
+        </div>
+        <div class="container__lastname">
+          <input type="text" placeholder="Apellido" id="lastname"/>
+        </div>
+        <span id="resnumber"></span>
+        <span id="resyear"></span>
+        <span id="rescvv"></span>
+        <span id="resfirstname"></span>
+        <span id="reslastname"></span>
+        <div class="container__start" id="gobutton">
+          <input type="button" value="Iniciar membresía" id="gobutton"/>
+        </div>
+      </div>
+    </div>
+    <script src="card.js"></script>
+  </body>
+</html>

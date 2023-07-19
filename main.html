@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+  </head>
+  <body>
+    <div class="container__background">
+      <div class="container__header">
+        <div class="container__letters">
+          <img src="./img/letters.png" />
+        </div>
+      </div>
+      <div class="container__all">
+        <div class="container__user">
+          <div class="container__message">
+            <p>Inicia sesión</p>
+          </div>
+          <input
+            type="text"
+            placeholder="Email o número de teléfono"
+            id="user"
+          />
+        </div>
+        <div class="container__pass">
+          <input type="text" placeholder="Contraseña" id="pass" />
+        </div>
+        <span id="resuser"></span>
+        <span id="respass"></span>
+        <div class="container__login">
+          <input type="button" value="Iniciar sesión" id="login"/>
+          <div class="container__need">
+            <div class="container__remember">
+              <input type="checkbox">Recuérdame</input>
+            </div>
+            <div class="container__help">
+              <p>¿Necesitas ayuda?</p>
+            </div>
+          </div>
+        </div>
+        <div class="container__new">
+          <p>¿Primera vez en Netflix? <span>Suscríbete ahora.</span></p>
+        </div>
+        <div class="container__captcha">
+          <p>
+            Esta página está protegida por Google reCAPTCHA para comprobar que
+            no eres un robot. <span>Más info.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
